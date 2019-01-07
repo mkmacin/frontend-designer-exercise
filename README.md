@@ -9,8 +9,8 @@ A starting [index.html](docs/index.html), [scripts.js](docs/scripts.js), and [st
 ## Task 1
 
 1. Use your existing / create a new Github account to store and present your exercise
-2. Download / fork this repo as your starting poing
-3. Use [Github Pages](https://pages.github.com/) to display your final result. Before editing any files, your Github page should look like this [repos page](https://rcchris-illinoisstateweb.github.io/frontend-designer-exercise/). 
+2. Download / fork this repo as your starting point
+3. Use [Github Pages](https://pages.github.com/) to display your final result. Before editing any files, your Github page should look like this [repos page](https://illinois-state-web.github.io/frontend-designer-exercise/). 
 4. Utilize [Bootstrap's](https://getbootstrap.com/docs/4.2/getting-started/introduction/) **Layouts** and **Components** for all UI needs. You should NOT need to write additonal CSS to deliver expected output.
 5. Add a nav bar
 6. Create a row with 3 columns with the following: Media Object, Accordion, Row containing another row with a List group with badges in each column [screenshot: 02-task1-full.png](screenshots/02-task1-full.png)
