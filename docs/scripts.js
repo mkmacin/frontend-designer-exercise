@@ -44,7 +44,7 @@ var app = new Vue({
     },
     mounted: function() {
         axios
-            .get('frontend-designer-exercise/docs/data.json')
+            .get('https://github.com/mkmacin/frontend-designer-exercise/docs/data.json')
             .then(response => {this.people = response})
             .catch(error => console.log(error))
     },
