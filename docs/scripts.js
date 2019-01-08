@@ -49,7 +49,9 @@ var app = new Vue({
             .catch(error => console.log(error))
     },
     methods: {
-
+        sortLast: function(people) {
+            return this.people.slice(0).sort((a, b) => a.lname < b.lname);
+        }
     },
     filters: {
         filterDate(date) {
