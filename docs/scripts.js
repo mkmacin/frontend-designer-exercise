@@ -45,7 +45,7 @@ var app = new Vue({
     mounted: function() {
         axios
             .get('https://raw.githubusercontent.com/mkmacin/frontend-designer-exercise/master/docs/data.json')
-            .then(response => {this.people = response})
+            .then(response => {this.people = response.data})
             .catch(error => console.log(error))
     },
     methods: {
