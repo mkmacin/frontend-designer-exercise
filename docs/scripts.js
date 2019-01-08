@@ -1,4 +1,5 @@
 // Add your Vue.js code
+
 console.log('start script.js');
 
 var app = new Vue({
@@ -42,7 +43,10 @@ var app = new Vue({
       ]
     },
     mounted: function() {
-
+        axios
+            .get('frontend-designer-exercise/docs/data.json')
+            .then(response => {this.people = response})
+            .catch(error => console.log(error))
     },
     methods: {
 

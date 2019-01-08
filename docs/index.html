@@ -157,9 +157,9 @@
                 </tr>
               </thead>
               <tbody>
-                <template v-for="item in people">
-                  <tr id="{{item._id}}">
-                    <td>{{ index + 1 }}</td>
+                <template v-for="(item, index) in people">
+                  <tr :id="item._id">
+                    <th scope="row">{{ index + 1 }}</th>
                     <td>{{ item.fname }}</td>
                     <td>{{ item.lname }}</td>
                     <td>{{ item.age }}</td>
@@ -172,45 +172,6 @@
                 </template>
               </tbody>
             </table>
-        </div>
-        <div class="container">
-
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>34</td>
-                    <td>male</td>
-                    <td>TRIPTIC</td>
-                    <td>markotto@triptic.org</td>
-                    <td>Feb 8th 2018 at 4:59:08 pm</td>
-                    <td>$1,189.08</td>
-                  </tr>
-                  <tr>
-                      <th scope="row">2</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>34</td>
-                      <td>male</td>
-                      <td>TRIPTIC</td>
-                      <td>markotto@triptic.org</td>
-                      <td>Feb 8th 2018 at 4:59:08 pm</td>
-                      <td>$1,189.08</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>34</td>
-                        <td>male</td>
-                        <td>TRIPTIC</td>
-                        <td>markotto@triptic.org</td>
-                        <td>Feb 8th 2018 at 4:59:08 pm</td>
-                        <td>$1,189.08</td>
-                      </tr>
-                </tbody>
-              </table>
         </div>
     </div>
 
