@@ -49,12 +49,7 @@ var app = new Vue({
             .catch(error => console.log(error))
     },
     methods: {
-        /* formattedDate: function(date) {
-            return moment(date).format('MMM Do YYYY [at] h:mm:ss a');
-        },
-        formattedBalance: function(balance) {
-            return numeral(balance).format('$0,0.00');
-        } */
+
     },
     filters: {
         filterDate(date) {

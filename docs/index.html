@@ -166,10 +166,10 @@
                     <td>{{ item.gender }}</td>
                     <td>{{ item.company }}</td>
                     <td>{{ item.email }}</td>
-                    <td>{{ formattedDate(item.registered) }}</td>
-                    <td v-if="item.balance > 3000" class="table-danger">{{ formattedBalance(item.balance) }}</td>
-                    <td v-else-if="item.balance < 2000" class="table-success">{{ formattedBalance(item.balance) }}</td>
-                    <td v-else>{{ formattedBalance(item.balance) }}</td>
+                    <td>{{ item.registered | filterDate }}</td>
+                    <td v-if="item.balance > 3000" class="table-danger">{{ item.balance | filterBalance }}</td>
+                    <td v-else-if="item.balance < 2000" class="table-success">{{ item.balance | filterBalance }}</td>
+                    <td v-else>{{ item.balance | filterBalance }}</td>
                   </tr>
                 </template>
               </tbody>
