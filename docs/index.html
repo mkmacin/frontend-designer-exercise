@@ -142,6 +142,75 @@
         <h2 id="task2">Task 2</h2>
         <div id="app">
             <p class="alert alert-primary">{{message}}</p>
+            <table class="table table-hover table-responsive-md">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Age</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Company</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Registered</th>
+                  <th scope="col">Balance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <template v-for="item in people">
+                  <tr id="{{item._id}}">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ item.fname }}</td>
+                    <td>{{ item.lname }}</td>
+                    <td>{{ item.age }}</td>
+                    <td>{{ item.gender }}</td>
+                    <td>{{ item.company }}</td>
+                    <td>{{ item.email }}</td>
+                    <td>{{ item.registered }}</td>
+                    <td>{{ item.balance }}</td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+        </div>
+        <div class="container">
+
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>34</td>
+                    <td>male</td>
+                    <td>TRIPTIC</td>
+                    <td>markotto@triptic.org</td>
+                    <td>Feb 8th 2018 at 4:59:08 pm</td>
+                    <td>$1,189.08</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">2</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>34</td>
+                      <td>male</td>
+                      <td>TRIPTIC</td>
+                      <td>markotto@triptic.org</td>
+                      <td>Feb 8th 2018 at 4:59:08 pm</td>
+                      <td>$1,189.08</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>34</td>
+                        <td>male</td>
+                        <td>TRIPTIC</td>
+                        <td>markotto@triptic.org</td>
+                        <td>Feb 8th 2018 at 4:59:08 pm</td>
+                        <td>$1,189.08</td>
+                      </tr>
+                </tbody>
+              </table>
         </div>
     </div>
 
