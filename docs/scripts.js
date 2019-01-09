@@ -50,7 +50,11 @@ var app = new Vue({
     },
     methods: {
         orderedByLast: function () {
-            return _.orderBy(this.people, 'lname')
+            const clone = this.people.slice(0)
+            clone.sort((a, b) => {
+                return (a.lname < b.lname) ? -1 : (a.lname > b.lname) ? 1 : 0;
+            });
+            return clone;
         }
     },
     filters: {

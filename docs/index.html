@@ -157,7 +157,7 @@
                 </tr>
               </thead>
               <tbody>
-                <template v-for="(item, index) in orderedByLast">
+                <template v-for="(item, index) in orderedByLast(people)" :key="item.lname">
                   <tr :id="item._id">
                     <th scope="row">{{ index + 1 }}</th>
                     <td>{{ item.fname }}</td>
