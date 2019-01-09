@@ -49,7 +49,9 @@ var app = new Vue({
             .catch(error => console.log(error))
     },
     methods: {
-
+        orderedByLast: function () {
+            return _.orderBy(this.people, 'lname')
+        }
     },
     filters: {
         filterDate(date) {
